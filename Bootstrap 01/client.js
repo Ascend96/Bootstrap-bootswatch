@@ -9,8 +9,10 @@ $(function(){
             toast.currentTime = 0;
             // play audio
             toast.play();
-            
+        $("#product").html($(this).data('product'));
+        $("#code").html($(this).data('code'));
         $('#toast').toast({autohide: false}).toast('show');
+
     });
 
 // on press of escape, hide toast
@@ -22,7 +24,7 @@ $(document).keyup(function(e){
 
 //$("#product1").data('value', 'Cookies')
 
-// set discounted product name
+/* set discounted product name
 $("#product").attr('data-value', 'Any Discounted Products');
 
 // get and output discounted product
@@ -32,9 +34,9 @@ $("#product").html(discountedItem);
 // set discount code
 $("#code").attr('data-value', '55689');
 
-// get and output discount code for product
+get and output discount code for product
 var discountCode = $("#code").attr('data-value');
-$("#code").html(discountCode);
+$("#code").html(discountCode); */
 
 });
 
